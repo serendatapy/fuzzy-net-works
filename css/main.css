@@ -16,18 +16,21 @@ body{
 
 .full-width{
     margin: 0 auto;
-    width: 1200px;
+    width: 100%
+    /*width: 1200px;*/
     
 }
 
 .half-width{
     float: left;
-    width: 600px;
+    width: 50%
+    /*width: 600px;*/
     
 }
 .third-width{
     float: left;
-    width: 400px;
+    width: 33.3%
+    /*width: 400px;*/
     
 }
 
