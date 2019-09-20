@@ -1,183 +1,23 @@
 /***** BASE STYLES *****/
 
-body{
-    color: #2b2b2b;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
-#about,
-#work,
-#contact{
-    height:600px;
-}
 
 
 /***** GRIDS (standard boxes for all the page) *****/
 
-.full-width{
-    margin: 0 auto;
-    width: 100%
-    /*width: 1200px;*/
-    
-}
-
-.half-width{
-    float: left;
-    width: 50%
-    /*width: 600px;*/
-    
-}
-.third-width{
-    float: left;
-    width: 33.3%
-    /*width: 400px;*/
-    
-}
 
 /********************* Specific Styles ******************/
 
 /********************HEADER Styles***********************/
 
-header{
-    background: url('../img/hero.png');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-}
-    header h1{
-        color: #bbc085;
-        font-size: 30px;
-        font-family: 'Lora', serif;
-        padding: 65px 0 65px 25px;
-}
-    header h2{
-        color: #9b9b9b;
-        clear: both;
-        font-size: 72px;
-        font-family: 'Lora', serif;
-        line-height: 80px;
-        padding: 20px 0 20px 25px;
-        width:950px;
-}
-        header h2 span {
-            color: black;
-}
-    nav{
-        float: right;
-        padding: 75px 25px;
-}
-        nav ul{
-            list-style: none; 
-}
-        nav ul li{
-            display: inline-block;  
-}
-        nav ul li a{
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 18px;
-            color: #9b9b9b;
-            padding-left: 80px;
-}
 
-
-/*********************** ABOUT Styles **********************/
-
-#about .full-width{
-    padding: 80px 0;
-}
-    #about h2{
-        font-family: 'Lora', serif;
-        font-size: 36px;
-        padding-left: 50px;
-}
-    #about p{
-        font-size: 21px;
-        color: #a1a1a1;
-        line-height: 40px;
-        padding-left: 50px;
-        padding-right: 50px;
-}
 
 /*************************** WORK Styles ********************/
-    #work{
-        text-align: center;
-        background: #f9ceb7;
-    }
-    
-        #work .full-width{
-            padding: 115px 0;
-    }
-        #work img{
-            padding-bottom: 30px;
-    }
-        #work h3{
-            font-size: 24px;
-            line-height: 32px;
-            width: 190px;
-            margin: 0 auto;
-    }
-        #work p{
-            font-family: 'Lora', serif;
-            font-size: 18px;
-            line-height: 30px;
-            padding: 0 50px;
-    }
+   
 /************************* CONTACT Styles *************************/
 
-#contact{
-    background: #ebebeb;
-}
-    #contact .full-width{
-        padding: 120px 0;
-}
-    #contact img#contact-img {
-        border: 12px solid #ffffff;
-        margin-left: 25px;
-}
-    #contact h2,
-     #contact #email-header,
-     #contact #socialmedia-header,
-      #contact ul{
-        padding-left: 115px;
-}
-    #contact h2 {
-        font-family: 'Lora', serif;
-        font-size: 36px;
-        line-height: 44px;
-    }
-
-    #contact a {
-        color: #c49075;
-        font-weight: bold;
-        font-size: 28px;
-        text-decoration: underline;
-}
-    #contact #envelope{
-        padding: 0 10px 0 115px;
-}
-    #contact #email-header{
-        font-size: 28px;
-        font-weight: lighter;
-        line-height: 44px;
-        margin: -30px 0 5px 0;
-}
-    #contact #socialmedia-header {
-        font-weight: bold;
-        font-size: 29px;
-        line-height: 44px;
-        margin: 40px 0 0 0;
-}
 /****************Remove list style***************************/
-#contact ul {
-    list-style: none;
-}
+
 /*******************Put list items in a line*******************/
-#contact ul li {
-     display: inline-block;
-}
+
 /**************Put in correct position************************/
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
-}
