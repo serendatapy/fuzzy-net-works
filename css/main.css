@@ -1,18 +1,56 @@
 /***** BASE STYLES *****/
 
-
+img { 
+    width: 50%; 
+    height: 50%; 
+    object-fit: contain; 
+} 
 
 
 /***** GRIDS (standard boxes for all the page) *****/
-
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+}
+.half-width {
+    width: 50%;
+    float: left;
+}
 
 /********************* Specific Styles ******************/
 
 /********************HEADER Styles***********************/
+header {
+    background: url('../images-icons/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px
+}
+
+header h1 {
+    text-align: center;
+    /*object-fit: contain;*/
+    padding-top: 300px;
+}
+
+header h2 {
+    text-align: center;
+    /*object-fit: contain;*/
+    padding-top: 20px;
+}
 
 
+/*************************** PROJECTS Styles ********************/
+#projects {
+    height: 200px;
+}
 
-/*************************** WORK Styles ********************/
+/*************************** ABOUT Styles ********************/
+
+#about {
+    background: #087e8b;
+    height: 300px;
+}
    
 /************************* CONTACT Styles *************************/
 

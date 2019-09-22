@@ -1,0 +1,53 @@
+
+#global {
+    font-family: 'Quattrocento', serif;
+    font-size:17px;
+    text-align: center;
+}
+.bigoswald {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+}
+.smalloswald {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+#left-col {
+    background: slategrey;
+    float:left;
+    width: 50%;
+    padding:0px;
+    overflow: auto;
+}
+#right-col {
+    background: skyblue;
+    float:left;
+    width: 50%;
+    padding: 0px;
+    overflow: auto;
+}
+p{
+    margin:40px 0px 0px 0px;
+}
+
+.bigmess {
+    background:#16f4d0;
+    padding:6%;
+    font-size:25px;
+    height:66.6%;
+}
+.smallmess1 {
+    background:#ef7674;
+    padding:7%;
+    height:33.3%;
+}
+.smallmess2 {
+    background:#246a73;
+    padding:7%;
+    height:33.3%;
+}
+.smallmess3 {
+    background:#f6efa6;
+    padding:7%;
+    height:33.3%;
+}
