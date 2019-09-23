@@ -107,7 +107,9 @@ header h2 {
 }
 
 #about img {
-    height: 50%;
+    width: 50%;
+    vertical-align: middle;
+    padding: 0% 5% 0% 15%;
 }
 
    
