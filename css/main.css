@@ -1,9 +1,9 @@
 /***** BASE STYLES *****/
 
 img { 
-    width: 50%; 
-    height: 50%; 
-    object-fit: contain; 
+    width: 550px; 
+    height: 350px; 
+    /*object-fit: contain; */
 } 
 
 
@@ -24,7 +24,8 @@ header {
     background: url('../images-icons/hero-image.png');
     background-size: cover;
     background-position: center;
-    height: 500px
+    height: 800px;
+    width: 1400px;
 }
 
 header h1 {
@@ -41,16 +42,31 @@ header h2 {
 
 
 /*************************** PROJECTS Styles ********************/
+#portfolio {
+    height: 50px;
+    text-align: center;
+    clear: both;
+}
+
+#projects .half-width{
+    height: 350px;
+    width: 45%;
+    padding: 2.5%;
+}
+
 #projects {
-    height: 200px;
+    height: 500px;
 }
 
 /*************************** ABOUT Styles ********************/
-
+#about-title  {
+    clear: both;
+}
 #about {
     background: #087e8b;
     height: 300px;
 }
+
    
 /************************* CONTACT Styles *************************/
 
