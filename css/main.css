@@ -6,6 +6,15 @@ img {
     /*object-fit: contain; */
 } 
 
+body {
+    margin: 0;
+    color: #2b2b2b;
+}
+
+h1,h2,h3 {
+    margin: 0px;
+}
+
 
 /***** GRIDS (standard boxes for all the page) *****/
 .full-width {
@@ -14,6 +23,10 @@ img {
 }
 .half-width {
     width: 50%;
+    float: left;
+}
+.third-width {
+    width: 33.3%;
     float: left;
 }
 
@@ -25,7 +38,6 @@ header {
     background-size: cover;
     background-position: center;
     height: 800px;
-    width: 1400px;
 }
 
 header h1 {
@@ -59,16 +71,31 @@ header h2 {
 }
 
 /*************************** ABOUT Styles ********************/
-#about-title  {
-    clear: both;
-}
+
 #about {
     background: #087e8b;
     height: 300px;
 }
+#about-title  {
+    clear: both;
+    text-align: center;
+}
 
    
 /************************* CONTACT Styles *************************/
+footer{
+    background: #095156;
+    height: 450px;
+    text-align: center;
+}
+footer .third-width{
+    height: 400px;
+    
+    
+}
+#foottitle{
+    text-align: center;
+}
 
 /****************Remove list style***************************/
 
