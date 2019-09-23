@@ -1,18 +1,23 @@
 /***** BASE STYLES *****/
 
-img { 
-    width: 550px; 
-    height: 350px; 
-    /*object-fit: contain; */
-} 
-
 body {
     margin: 0;
     color: #2b2b2b;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 h1,h2,h3 {
     margin: 0px;
+    width: 95%;
+}
+p {
+    font-size: 24px;
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
 }
 
 
@@ -38,61 +43,100 @@ header {
     background-size: cover;
     background-position: center;
     height: 800px;
+    overflow: auto;
+    
 }
 
 header h1 {
     text-align: center;
     /*object-fit: contain;*/
     padding-top: 300px;
+    color: #bdbf09;
+    font-size: 60px;
 }
 
 header h2 {
     text-align: center;
     /*object-fit: contain;*/
     padding-top: 20px;
+    color: #095256;
+    font-size: 48px;
 }
 
 
 /*************************** PROJECTS Styles ********************/
-#portfolio {
-    height: 50px;
-    text-align: center;
-    clear: both;
-}
-
 #projects .half-width{
     height: 350px;
     width: 45%;
     padding: 2.5%;
 }
 
+#projects img { 
+    width: 80%; 
+    height: 80%;
+}
+
 #projects {
     height: 500px;
+    color: #095256;
+    overflow: auto;
+    
 }
+
+#portfolio {
+    height: 50px;  
+}
+
+#portfolio h3{
+    font-size: 36px;
+}
+
 
 /*************************** ABOUT Styles ********************/
 
 #about {
     background: #087e8b;
-    height: 300px;
+    height: 400px;
+    color: white;
+    overflow: auto;
+    
 }
 #about-title  {
     clear: both;
     text-align: center;
 }
 
+#about img {
+    height: 50%;
+}
+
    
 /************************* CONTACT Styles *************************/
 footer{
     background: #095156;
-    height: 450px;
+    height: 300px;
     text-align: center;
+    color: white;
+    overflow: auto;
+    
 }
 footer .third-width{
-    height: 400px;
+    height: 200px;
     
     
 }
+footer a{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+}
+/*
+footer img{
+    padding: 0 10px 0 10px;
+    width: 35%;
+    height: 50%;
+}*/
 #foottitle{
     text-align: center;
 }
