@@ -19,7 +19,7 @@ header{
 header div{
     float: left;
     width: 50%;
-    background: black;
+    background: #FFA646;
 }
 header h1 {
     padding: 5%;
@@ -32,7 +32,7 @@ a {
 /******COLUMN STYLES*******/
 
 #left-col {
-    background: black;
+    background: #FFA646;
     float:left;
     width: 45%;
     padding:0px;
@@ -40,7 +40,7 @@ a {
     padding-left: 5%;
 }
 #right-col {
-    background: black;
+    background: #FFA646;
     float:left;
     width: 45%;
     padding: 0px;
@@ -49,23 +49,24 @@ a {
 }
 
 .bigmess {
-    background:#16f4d0;
+    background:#FFA646;
     padding:5%;
     font-size:25px;
     height:22%;
 }
 .smallmess1 {
-    background:#ef7674;
+    background:#343779;
     padding:5%;
     height:6%;
+    color: white;
 }
 .smallmess2 {
-    background:#246a73;
+    background:#33A9AC;
     padding:5%;
     height:6%;
 }
 .smallmess3 {
-    background:#f6efa6;
+    background:#F86041;
     padding:5%;
     height:6%;
 }

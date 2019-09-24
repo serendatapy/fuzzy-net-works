@@ -7,13 +7,14 @@ body {
     
 }
 
-h1,h2,h3 {
+h1,h2,h3,p {
     margin: 0px;
     width: 95%;
 }
 p {
     font-size: 24px;
 }
+
 h2{
     padding-top: 20px;
     text-align: center;
@@ -48,17 +49,17 @@ header {
 }
 
 header h1 {
-    text-align: center;
+    text-align: left;
     /*object-fit: contain;*/
-    padding-top: 300px;
+    padding-top: 20px;
     color: #bdbf09;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 header h2 {
     text-align: center;
     /*object-fit: contain;*/
-    padding-top: 20px;
+    padding-top: 300px;
     color: #095256;
     font-size: 48px;
 }
@@ -73,7 +74,9 @@ header h2 {
 
 #projects img { 
     width: 80%; 
-    height: 80%;
+    /*height: 80%;*/
+    vertical-align: middle;
+    padding: 3% 5% 0% 15%;
 }
 
 #projects {
@@ -96,20 +99,21 @@ header h2 {
 
 #about {
     background: #087e8b;
-    height: 400px;
+    height: 450px;
     color: white;
     overflow: auto;
-    
 }
+
 #about-title  {
     clear: both;
     text-align: center;
+    padding-bottom: 2%;
 }
 
 #about img {
     width: 50%;
     vertical-align: middle;
-    padding: 0% 5% 0% 15%;
+    padding: 1% 5% 0% 20%;
 }
 
    
@@ -120,6 +124,7 @@ footer{
     text-align: center;
     color: white;
     overflow: auto;
+    padding-left: 2%;
     
 }
 footer .third-width{
@@ -133,14 +138,10 @@ footer a{
     font-size: 28px;
     text-decoration: none;
 }
-/*
-footer img{
-    padding: 0 10px 0 10px;
-    width: 35%;
-    height: 50%;
-}*/
-#foottitle{
-    text-align: center;
+
+#foottitle h2{
+    text-align: left;
+    padding: 1% 0 2% 0%;
 }
 
 /****************Remove list style***************************/
