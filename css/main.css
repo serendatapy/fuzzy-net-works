@@ -104,7 +104,7 @@ body {
     margin: 0;
     color: #2b2b2b;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
 h1,h2,h3,p {
@@ -140,12 +140,18 @@ h2{
 
 /********************HEADER Styles***********************/
 header {
-    background: url('../images-icons/hero-image.png');
+    background: url('../images-icons/hero-image2.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
     overflow: auto;
-    
+
+
+
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -154,24 +160,37 @@ header h1 {
     padding: 20px;
     color: #bdbf09;
     font-size: 30px;
-}
 
-header h2 {
-    text-align: center;
-    /*object-fit: contain;*/
-    padding-top: 300px;
+}
+#title {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+}
+#title h2 {
+    text-align: right;
     color: #095256;
-    font-size: 48px;
+    font-size: 38px;
+    background: #64b6ac;
+    border-radius: 10px;
+    padding: 1% 5% 1% 0%;
+    margin: 0.5em 0em;
+    width: 60%;
 }
 
 nav{
     text-align: centre;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+
 }
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    color: #bdbf09;
+    color:white;
     font-size: 18px;
     padding: 0%;
 
@@ -186,6 +205,15 @@ nav ul li{
     padding: 20px 0 20px 15px;
 }
 
+#nav-links {
+    background: #d76f72;
+    border-radius: 10px;
+    width: 60%;
+    /*margin: 0.25em;
+    padding: 0px 30px;
+    width: 15em;*/
+}
+
 
 /*************************** PROJECTS Styles ********************/
 #projects .half-width{
@@ -194,9 +222,8 @@ nav ul li{
     padding: 2.5%;
 }
 
-#projects img { 
-    width: 80%; 
-    /*height: 80%;*/
+#projects img {
+    width: 80%;
     vertical-align: middle;
     padding: 3% 5% 0% 15%;
 }
@@ -205,11 +232,11 @@ nav ul li{
     height: 500px;
     color: #095256;
     overflow: auto;
-    
+
 }
 
 #portfolio {
-    height: 50px;  
+    height: 50px;
 }
 
 #portfolio h3{
@@ -238,7 +265,7 @@ nav ul li{
     padding: 1% 5% 0% 20%;
 }
 
-   
+
 /************************* CONTACT Styles *************************/
 footer{
     background: #095156;
