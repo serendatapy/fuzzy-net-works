@@ -100,10 +100,32 @@ textarea {
 
 /***** BASE STYLES *****/
 
+html{
+  font-size: 62.5%;
+  }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+      } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+      } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%;
+      } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; }
+  }
+
 body {
     margin: 0;
     color: #2b2b2b;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    box-sizing: border-box;
 
 }
 
@@ -120,7 +142,18 @@ h2{
     text-align: center;
     font-size: 36px;
 }
-
+/*
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(3, min-content) 100vh min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media (max-width: 37.5em) {
+    .container {
+      grid-template-rows: 95vh repeat(3, min-content) 100vh min-content; } }
+  @media only screen and (max-width: 20em) {
+    .container {
+      grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
+*/
 
 /***** GRIDS (standard boxes for all the page) *****/
 .full-width {
@@ -156,7 +189,6 @@ header {
 
 header h1 {
     text-align: left;
-    /*object-fit: contain;*/
     padding: 20px;
     color: #bdbf09;
     font-size: 30px;
@@ -209,9 +241,6 @@ nav ul li{
     background: #d76f72;
     border-radius: 10px;
     width: 60%;
-    /*margin: 0.25em;
-    padding: 0px 30px;
-    width: 15em;*/
 }
 
 
@@ -248,21 +277,79 @@ nav ul li{
 
 #about {
     background: #087e8b;
-    height: 450px;
     color: white;
-    overflow: auto;
-}
+    display: grid;
+    /*grid-template-columns: repeat(10,10%);*/
+    /*grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,10%);*/
 
-#about-title  {
-    clear: both;
-    text-align: center;
-    padding-bottom: 2%;
-}
+    grid-template: repeat(15,1fr)/repeat(15,1fr);
 
-#about img {
+/*
+    display: grid;
+    grid-template-rows: 20vh repeat(3, min-content) 20vh min-content;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+ */
+    box-sizing: border-box;
+}
+/*
+  @media (max-width: 37.5em) {
+    #about {
+      grid-template-rows: 95vh repeat(3, min-content) 100vh min-content; } }
+  @media only screen and (max-width: 20em) {
+    #about {
+      grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
+*/
+/*#about img {
     width: 50%;
     vertical-align: middle;
     padding: 1% 5% 0% 20%;
+}*/
+#about-background {
+  background: url('../images-icons/hero-me.jpg');
+  background-size: cover;
+  background-position: center;
+  grid-column: 5/16;
+  grid-row: 1/16;
+    /*OR
+    grid-area: 1/5/11/11;
+    rowStart/columnStart/rowEnd/columnEnd
+  */
+  /*grid-row-start: 1;
+  grid-row-end: 11;
+  grid-column-start: 5;
+  grid-column-end: 11;*/
+}
+
+#about-content{
+  background: rgba(0,0,0,0.7);
+  padding: 2rem 4rem;
+  height: 100%;
+
+  border-radius: 10px;
+  /*grid-row-start: 2;
+  grid-row-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 8;*/
+  grid-column: 2/10;
+  grid-row: 5/10;
+  /*
+  grid-area:2/2/10/8;
+  */
+
+
+  display: flex;
+  flex-direction: column;
+}
+#about-content h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+#about-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 
