@@ -292,7 +292,7 @@ nav ul li{
 }
 
 #portfolio {
-  background: #F2EDE4;
+  /*background: #F2EDE4;*/
   grid-column: port-center-start / port-center-end;
   margin: 7.5rem 0 15rem 0;
   z-index: 1;
@@ -308,7 +308,8 @@ nav ul li{
 
 }
 .portfolio-img{
-  background-image: url('../images-icons/rogue-pickings-thumbnail.png');
+
+  background-image: url('../images-icons/rogue-pickings-mockup.png');
   /*background: url('../images-icons/hero-image2.jpg');*/
   position: relative;
   background-size: cover;
@@ -317,18 +318,20 @@ nav ul li{
   width: 28rem;
 }
 .portfolio-text h4 {
-  color: #095156;
+  color: #72C8C1;
   font-size: 2.5rem;
-  padding: 2rem;
+  padding: 0.5rem;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 800;
   text-align: center;
+  margin: 1em 0em;
 }
 .portfolio-text p {
-  color: #095156;
+  /*color: rgba(215, 111, 114);*/
+  color: #72C8C1;
   padding: 0.3rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 /*
 #portfolio-container h2 {
@@ -346,6 +349,10 @@ nav ul li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  padding: 2em;*/
+
 }
 
 
@@ -399,7 +406,8 @@ nav ul li{
 }
 
 #about-content{
-  background: rgba(0,0,0,0.7);
+  /*background: rgba(0,0,0,0.7);*/
+  background: rgba(215, 111, 114, 0.7);
   padding: 2rem 4rem;
   height: 100%;
 
@@ -432,7 +440,7 @@ nav ul li{
 
 /************************* CONTACT Styles *************************/
 footer{
-    background: #095156;
+    background: #1B9AAA;
     height: 300px;
     text-align: center;
     color: white;
