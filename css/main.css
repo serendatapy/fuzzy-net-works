@@ -123,7 +123,7 @@ html{
 body {
     margin: 0;
     color: #2b2b2b;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     line-height: 1.7;
     box-sizing: border-box;
 
@@ -225,12 +225,13 @@ header h1 {
     text-align: center;
     /*color: #095256;*/
     color: white;
-    font-size:3rem;
+    font-size:5rem;
     /*background: #64b6ac;*/
     background: rgba(100, 182, 172, 0.7);
     border-radius: 10px;
     padding: 0.25em 0.5em;
     margin: 0.5em 0.5em;
+    font-weight: 400;
     /*width: 60%;*/
 }
 
@@ -248,7 +249,6 @@ nav{
 nav a {
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
     color:white;
     font-size: 2rem;
     padding: 0%;
@@ -271,7 +271,7 @@ nav ul li{
 
 #nav-links {
     /*background: #d76f72;*/
-    background: rgba(215, 111, 114, 0.7);
+    background: rgba(231, 79, 54, 0.8);
     border-radius: 10px;
     width: 100%;
     padding: 0.25em 0.25em;
@@ -300,17 +300,40 @@ nav ul li{
   grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
   grid-gap: 8rem;
   /*height: 500px;*/
-
-
     /*grid-template: repeat(15,1fr)/repeat(15,1fr);*/
     /*overflow: auto;*/
 
 
 }
-.portfolio-img{
+/*.portfolio-img{
 
   background-image: url('../images-icons/rogue-pickings-mockup.png');
   /*background: url('../images-icons/hero-image2.jpg');*/
+  /*position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 18rem;
+  width: 28rem;
+}*/
+
+#portfolio-img-1{
+  background-image: url('../images-icons/rogue-pickings-mockup.png');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 18rem;
+  width: 28rem;
+}
+#portfolio-img-2{
+  background-image: url('../images-icons/wordpress-accelarate.png');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 18rem;
+  width: 28rem;
+}
+#portfolio-img-3{
+  background-image: url('../images-icons/chatbox-bot.png');
   position: relative;
   background-size: cover;
   background-position: center;
@@ -328,10 +351,11 @@ nav ul li{
 }
 .portfolio-text p {
   /*color: rgba(215, 111, 114);*/
-  color: #72C8C1;
+  /*color: #72C8C1;*/
   padding: 0.3rem;
   text-align: center;
   font-size: 1.75rem;
+  color: slategray;
 }
 /*
 #portfolio-container h2 {
@@ -407,7 +431,8 @@ nav ul li{
 
 #about-content{
   /*background: rgba(0,0,0,0.7);*/
-  background: rgba(215, 111, 114, 0.7);
+  /*background: rgba(215, 111, 114, 0.7);*/
+  background: rgba(231, 79, 54, 0.8);
   padding: 2rem 4rem;
   height: 100%;
 
@@ -431,9 +456,10 @@ nav ul li{
   line-height: 1;
   font-weight: 400;
   margin-bottom: 3rem;
+  text-align: left;
 }
 #about-content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
