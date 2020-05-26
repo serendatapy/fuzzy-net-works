@@ -173,86 +173,51 @@ h2{
 
 /********************HEADER Styles***********************/
 header {
-  /*  background:
-    linear-gradient(to right bottom, rgba(191,133,122,0.4172494172494172) 0%,
-    rgba(139,65,62,0.09790209790209792) 100%), url('../images-icons/hero-image2.jpg');
-*/
-    /* linear-gradient(67deg, rgba(191,133,122,1) 0%, rgba(139,65,62,0.13489145658263302) 100%)
-*/
-
-background: url('../images-icons/hero-image2.jpg');
-
-
-
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    /*overflow: auto;*/
-    display: grid;
-    /*grid-template-columns: repeat(10,10%);*/
-    /*grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(10,10%);*/
-
-    grid-template: repeat(15,1fr)/repeat(15,1fr);
-
-
-
-   /* display: flex;
-    align-content: space-between;
-    justify-content: flex-end;
-    flex-wrap: wrap;*/
+  background: url('../images-icons/hero-image2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: grid;
+  grid-template: repeat(15,1fr)/repeat(15,1fr);
+  color: white;
 }
 
-header h1 {
-    text-align: left;
-    padding: 20px;
-    color: #bdbf09;
-    font-size: 2rem;
-
-}
 #title {
-  display: flex;
-  /*justify-content: flex-end;*/
-  /*text-align: center;*/
-  /*background: rgba(0,0,0,0.7);*/
-  width: 100%;
+  /*display: flex;*/
+  /*width: 100%;*/
   grid-row: 1/2;
   grid-column: 1/9;
   border-radius: 10px;
 
 }
-#title h2 {
-    text-align: center;
-    /*color: #095256;*/
-    color: white;
-    font-size:5rem;
-    /*background: #64b6ac;*/
-    background: rgba(100, 182, 172, 0.7);
-    border-radius: 10px;
-    padding: 0.25em 0.5em;
-    margin: 0.5em 0.5em;
-    font-weight: 400;
-    /*width: 60%;*/
+
+header h1 {
+  text-align: left;
+  font-size:4.25rem;
+  background: rgba(100, 182, 172, 0.7);
+  border-radius: 10px;
+  padding: 0.25em 0.5em;
+  margin: 0.5em 0.5em;
+  font-weight: 400;
+}
+header span {
+  font-size:3rem;
+}
+nav {
+  grid-row: 15/16;
+  grid-column: 7/16;
+  background: rgba(231, 79, 54, 0.8);
+  border-radius: 10px;
+  padding: 0.25em 0.25em;
+  margin: 1em 1em;
 }
 
-nav{
-    display: flex;
-    text-align: centre;
-    /*background: rgba(0,0,0,0.7);*/
-    width: 100%;
-    grid-row: 15/16;
-    grid-column: 7/16;
-    padding: 1em;
-    border-radius: 10px;
-
-}
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     color:white;
     font-size: 2rem;
     padding: 0%;
-
 }
 
 nav ul{
@@ -261,7 +226,6 @@ nav ul{
     justify-content: space-evenly;
     margin: 0px;
     padding: 0px;
-
 }
 
 nav ul li{
@@ -269,21 +233,11 @@ nav ul li{
     padding: 1.25em 0 1.25em 0;
 }
 
-#nav-links {
-    /*background: #d76f72;*/
-    background: rgba(231, 79, 54, 0.8);
-    border-radius: 10px;
-    width: 100%;
-    padding: 0.25em 0.25em;
-    margin: 0.5em 0.5em;
-    /*width: 60%;*/
-}
 
-
-/*************************** PROJECTS Styles ********************/
+/*************************** PORTFOLIO Styles ********************/
 #portfolio-container{
   background: #F2EDE4;
-  grid-column: full-start/full-end;
+  /*grid-column: full-start/full-end;*/
   display: grid;
   grid-template-columns: [portfolio-start] minmax(6rem, 1fr)
   [port-center-start] repeat(8, [col-start]
@@ -292,33 +246,25 @@ nav ul li{
 }
 
 #portfolio {
-  /*background: #F2EDE4;*/
   grid-column: port-center-start / port-center-end;
-  margin: 7.5rem 0 15rem 0;
-  z-index: 1;
+  margin: 15rem 0 15rem 0;
+  /*z-index: 1;*/
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
   grid-gap: 8rem;
-  /*height: 500px;*/
-    /*grid-template: repeat(15,1fr)/repeat(15,1fr);*/
-    /*overflow: auto;*/
-
-
 }
-/*.portfolio-img{
 
-  background-image: url('../images-icons/rogue-pickings-mockup.png');
-  /*background: url('../images-icons/hero-image2.jpg');*/
-  /*position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 18rem;
-  width: 28rem;
-}*/
+.portfolio-box{
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+}
 
 #portfolio-img-1{
   background-image: url('../images-icons/rogue-pickings-mockup.png');
-  position: relative;
+  /*position: relative;*/
   background-size: cover;
   background-position: center;
   height: 18rem;
@@ -327,7 +273,7 @@ nav ul li{
 }
 #portfolio-img-2{
   background-image: url('../images-icons/wordpress-accelarate.png');
-  position: relative;
+/*position: relative;*/
   background-size: cover;
   background-position: center;
   height: 18rem;
@@ -335,7 +281,7 @@ nav ul li{
 }
 #portfolio-img-3{
   background-image: url('../images-icons/chatbox-bot.png');
-  position: relative;
+/*position: relative;*/
   background-size: cover;
   background-position: center;
   height: 18rem;
@@ -346,60 +292,33 @@ nav ul li{
   font-size: 2.5rem;
   padding: 0.5rem;
   line-height: 1;
-  font-weight: 800;
   text-align: center;
-  margin: 1em 0em;
+  margin: 1em 0em 0em;
 }
 .portfolio-text p {
-  /*color: rgba(215, 111, 114);*/
-  /*color: #72C8C1;*/
   padding: 0.3rem;
   text-align: center;
   font-size: 1.75rem;
   color: slategray;
 }
-/*
-#portfolio-container h2 {
-  grid-column: 6/11;
-  font-size: 3rem;
-  background: rgba(100, 182, 172, 0.7);
-  color: white;
-  /*border-radius: 10px;*/
-  /*padding: 0.25em 0.5em;*/
-  /*margin: 0.5em 0.5em;*/
-/*}*/
-.portfolio-box{
-  align-self: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*background: rgba(0,0,0,0.7);
-  border-radius: 10px;
-  padding: 2em;*/
 
-}
+
 
 
 /*************************** ABOUT Styles ********************/
 
 #about {
-    /*background: #087e8b;*/
     background: #72C8C1;
     color: white;
     display: grid;
-    /*grid-template-columns: repeat(10,10%);*/
-    /*grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(10,10%);*/
-
-    grid-template: repeat(15,1fr)/repeat(15,1fr);
-
-/*
+    grid-template: repeat(15,1fr)/repeat(15,1fr); /*rows/columns*/
+    /*box-sizing: border-box;*/
+  /*
     display: grid;
     grid-template-rows: 20vh repeat(3, min-content) 20vh min-content;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
- */
-    box-sizing: border-box;
+  */
+
 }
 /*
   @media (max-width: 37.5em) {
@@ -409,11 +328,7 @@ nav ul li{
     #about {
       grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
 */
-/*#about img {
-    width: 50%;
-    vertical-align: middle;
-    padding: 1% 5% 0% 20%;
-}*/
+
 #about-background {
   background: url('../images-icons/hero-me.jpg');
   background-size: cover;
@@ -424,33 +339,17 @@ nav ul li{
     grid-area: 1/5/11/11;
     rowStart/columnStart/rowEnd/columnEnd
   */
-  /*grid-row-start: 1;
-  grid-row-end: 11;
-  grid-column-start: 5;
-  grid-column-end: 11;*/
 }
 
 #about-content{
-  /*background: rgba(0,0,0,0.7);*/
-  /*background: rgba(215, 111, 114, 0.7);*/
   background: rgba(231, 79, 54, 0.8);
-  padding: 2rem 4rem;
-  height: 100%;
-
+  padding: 3rem 4rem;
   border-radius: 10px;
-  /*grid-row-start: 2;
-  grid-row-end: 10;
-  grid-column-start: 2;
-  grid-column-end: 8;*/
-  grid-column: 2/10;
   grid-row: 5/10;
+  grid-column: 2/10;
   /*
   grid-area:2/2/10/8;
   */
-
-
-  display: flex;
-  flex-direction: column;
 }
 #about-content h2 {
   font-size: 3rem;
@@ -461,33 +360,42 @@ nav ul li{
 }
 #about-content p {
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 
 /************************* CONTACT Styles *************************/
 footer{
     background: #1B9AAA;
-    height: 300px;
+    height: 30rem;
     text-align: center;
     color: white;
-    /*overflow: auto;*/
 }
-footer .third-width{
-    height: 200px;
+#foottitle h2{
+  padding: 1% 0 1% 2%;
 }
+#footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+#footer-item{
+ width: 20%;
+ margin: 5%;
+}
+
 footer a{
     color: white;
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
-    padding-right: 4%;
+    /*padding-right: 4%;*/
+}
+footer p{
+  font-size: 2rem;
 }
 
-#foottitle h2{
-    /*text-align: left;*/
-    padding: 1% 0 1% 2%;
-}
+
 
 /****************Remove list style***************************/
 
