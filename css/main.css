@@ -259,34 +259,28 @@ nav ul li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center;*/
+}
+
+.portfolio-img{
+  background-size: cover;
+  background-position: center;
+  height: 18rem;
+  width: 28rem;
 }
 
 #portfolio-img-1{
-  background-image: url('../images-icons/rogue-pickings-mockup.png');
-  /*position: relative;*/
-  background-size: cover;
-  background-position: center;
-  height: 18rem;
-  width: 28rem;
-
+  background-image: url('../images-icons/unplugged-retreat-r.png');
 }
 #portfolio-img-2{
   background-image: url('../images-icons/wordpress-accelarate.png');
-/*position: relative;*/
-  background-size: cover;
-  background-position: center;
-  height: 18rem;
-  width: 28rem;
 }
 #portfolio-img-3{
   background-image: url('../images-icons/chatbox-bot.png');
-/*position: relative;*/
-  background-size: cover;
-  background-position: center;
-  height: 18rem;
-  width: 28rem;
 }
+#portfolio-img-4{
+  background-image: url('../images-icons/magic8ball-r.png');
+}
+
 .portfolio-text h4 {
   color: #72C8C1;
   font-size: 2.5rem;
