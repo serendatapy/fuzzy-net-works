@@ -525,6 +525,9 @@ footer p{
       rowStart/columnStart/rowEnd/columnEnd
     */
   }
+  nav a {
+    font-size: 3rem;
+  }
 }
 
 @media print,
