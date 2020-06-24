@@ -203,6 +203,31 @@ header h1 {
 header span {
   font-size:3rem;
 }
+
+/*------------CSS animated text-------------*/
+.typewriter {
+  font-family:monospace;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40,end),
+    blinking-cursor 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color:white; }
+}
+
+
 nav {
   grid-row: 15/16;
   grid-column: 4/16;
