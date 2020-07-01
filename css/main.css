@@ -331,7 +331,7 @@ nav ul li{
     color: white;
     display: grid;
     grid-template: repeat(10,1fr)/repeat(10,1fr); /*rows/columns*/
-    /*box-sizing: border-box;*/
+    height: 95vh;
   /*
     display: grid;
     grid-template-rows: 20vh repeat(3, min-content) 20vh min-content;
@@ -522,6 +522,15 @@ footer p{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (hover: hover){
+  .portfolio-img {
+    transition: transform .5s;
+  }
+
+  .portfolio-img:hover {
+    transform: scale(1.1);
+  }
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -536,15 +545,15 @@ footer p{
     background: rgba(231, 79, 54, 0.8);
     padding: 3rem 4rem;
     border-radius: 10px;
-    grid-row: 5/10;
+    grid-row: 3/11;
     grid-column: 2/10;
   }
   #about-background {
     background: url('../images-icons/hero-me.jpg');
     background-size: cover;
     background-position: center;
-    grid-column: 5/16;
     grid-row: 1/16;
+    grid-column: 5/16;
       /*OR
       grid-area: 1/5/11/11;
       rowStart/columnStart/rowEnd/columnEnd
