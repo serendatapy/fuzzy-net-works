@@ -179,9 +179,7 @@ header {
   color: white;
 }
 
-#title {
-  /*display: flex;*/
-  /*width: 100%;*/
+.title {
   grid-row: 1/2;
   grid-column: 1/9;
   border-radius: 10px;
@@ -210,14 +208,15 @@ header span {
   margin: 0 auto;
   letter-spacing: .15em;
   animation:
-    typing 3.5s steps(40,end),
+    /*typing 3.5s steps(40,end),*/
     blinking-cursor 1s step-end infinite;
 }
 
+/*
 @keyframes typing {
   from { width: 0 }
   to { width:100% }
-}
+}*/
 
 @keyframes blinking-cursor {
   from, to { border-color: transparent }
